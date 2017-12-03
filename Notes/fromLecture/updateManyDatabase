@@ -1,0 +1,23 @@
+Lecture 84 Update many database in meteor mongo
+
+go to terminal and direct to the meteor app folder
+run the meteor app
+Add a new Terminal tab then type: meteor mongo     <-- will direct you to the mongoDB shell
+
+db.databaseName.updateMany({}, { $set: { yourNewAttribute: attributeValue }})
+
+
+Lecture 85 Session
+
+it is functioned like localStorage
+you need to add session via Terminal --> meteor add session
+
+first import session
+
+import { Session } from 'meteor/session';
+
+Session.set('yourVariableName', value);
+a = Session.get('yourVariableName'); or inside database
+Links.find({
+  visible: Session.get('showVisible')
+}).fetch();

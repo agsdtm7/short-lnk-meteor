@@ -1,0 +1,3 @@
+Points of lecture 87
+
+fixing inconsistencies of checkbox (hide / show hidden)
